@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between">
         <a href="#" className="flex items-center">
           <span className="text-xl md:text-2xl font-bold gradient-text">
-            РЭПЕР
+            BDSM
           </span>
         </a>
 

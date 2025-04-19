@@ -19,7 +19,7 @@ const HeroSection = () => {
       {/* Контент */}
       <div className="container relative z-10 px-4 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 text-glow">
-          <span className="block gradient-text">РЭПЕР</span>
+          <span className="block gradient-text">BDSM</span>
           <span className="text-2xl md:text-3xl lg:text-4xl font-normal mt-2 block text-white/80">
             Новый альбом уже доступен
           </span>
