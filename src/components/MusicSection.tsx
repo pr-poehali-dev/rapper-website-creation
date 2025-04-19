@@ -6,7 +6,7 @@ import {
   SkipForward, 
   SkipBack, 
   Volume2,
-  Spotify,
+  Music2, // Заменил Spotify на Music2
   Youtube,
   Music
 } from "lucide-react";
@@ -23,7 +23,7 @@ const MusicSection = () => {
   ];
 
   const musicPlatforms = [
-    { name: "Spotify", icon: <Spotify className="h-5 w-5" />, color: "bg-[#1DB954]" },
+    { name: "Spotify", icon: <Music2 className="h-5 w-5" />, color: "bg-[#1DB954]" }, // Заменил Spotify на Music2
     { name: "YouTube Music", icon: <Youtube className="h-5 w-5" />, color: "bg-[#FF0000]" },
     { name: "Apple Music", icon: <Music className="h-5 w-5" />, color: "bg-[#FA243C]" }
   ];
