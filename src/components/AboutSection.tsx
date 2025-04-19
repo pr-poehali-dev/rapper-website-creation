@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "lucide-react";
+import { Link, Instagram, Youtube, Twitter } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -29,9 +29,23 @@ const AboutSection = () => {
               а создаю музыку, которая идёт от сердца.
             </p>
             
+            <div className="flex gap-4 flex-wrap mb-6">
+              <Button className="gap-2">
+                <Instagram className="h-4 w-4" />
+                Instagram
+              </Button>
+              <Button variant="outline" className="gap-2">
+                <Youtube className="h-4 w-4" />
+                YouTube
+              </Button>
+              <Button variant="outline" className="gap-2">
+                <Twitter className="h-4 w-4" />
+                Twitter
+              </Button>
+            </div>
+            
             <div className="flex gap-4 flex-wrap">
-              <Button>Следить в соцсетях</Button>
-              <Button variant="outline" className="gap-1.5">
+              <Button variant="secondary" className="gap-1.5">
                 <Link className="h-4 w-4" />
                 Интервью и публикации
               </Button>
@@ -40,13 +54,16 @@ const AboutSection = () => {
           
           <div className="flex-1 order-1 md:order-2">
             <div className="relative">
-              <div className="aspect-[3/4] rounded-lg overflow-hidden">
-                <img
-                  src="/placeholder.svg"
-                  alt="Фото артиста"
-                  className="w-full h-full object-cover"
-                />
+              <div className="aspect-[3/4] rounded-lg overflow-hidden bg-gradient-to-br from-primary/30 to-accent/30 p-1">
+                <div className="w-full h-full overflow-hidden rounded-lg">
+                  <img
+                    src="/placeholder.svg"
+                    alt="Фото артиста"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
+              
               <div className="absolute -bottom-4 -right-4 bg-primary/90 backdrop-blur-sm p-4 rounded-lg">
                 <p className="text-sm text-primary-foreground font-medium mb-1">
                   Выступления
@@ -55,6 +72,7 @@ const AboutSection = () => {
                   50+
                 </p>
               </div>
+              
               <div className="absolute -top-4 -left-4 bg-accent/90 backdrop-blur-sm p-4 rounded-lg">
                 <p className="text-sm text-accent-foreground font-medium mb-1">
                   Треки
